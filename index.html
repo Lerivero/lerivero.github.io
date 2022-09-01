@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo de Alura" class="logo" />
+      <h1 class="titulo">Desencriptador Alura</h1>
+    </header>
+
+    <main>
+      <div id="caja">
+        <div id="seccion-encriptar">
+          <!-- Seccion de texto a encriptar -->
+          <textarea
+            class="entrada-texto"
+            placeholder="Ingrese texto a encriptar/desencriptar"
+          ></textarea>
+
+          <div class="botones">
+            <button class="encriptar" onclick="botonEncriptar()">
+              Encriptar
+            </button>
+            <button class="desencriptar" onclick="botonDesencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+
+        <div id="seccion-mensaje">
+          <!-- Seccion de texto a desencriptar-->
+          <textarea class="mensaje" placeholder=""></textarea>
+          <div class="botones">
+            <button class="copiar" onclick="botonCopiar()">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="img/logo.png" alt="Logo Alura" />
+      <p class="copyright">
+        Copyright 2022. Diseñado por
+        <a href="https://www.linkedin.com/in/luis-rivero-armas/">RLuis</a>
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
